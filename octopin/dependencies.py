@@ -65,7 +65,7 @@ async def _fill_tree(
     parent: Tree | None = None,
 ) -> Tree:
     if resolve_pinned_versions is True and action.can_be_pinned():
-        pinned_version = await action.pinned_version()
+        pinned_version = await action.pinned_version(gh_api)
         node = Tree(f"{action!r} # {pinned_version}")
     else:
         node = Tree(f"{action!r}")
