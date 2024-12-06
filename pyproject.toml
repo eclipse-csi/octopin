@@ -64,8 +64,13 @@ dev = [
 ]
 
 [tool.pdm]
-version = { source = "file", path = "octopin/__init__.py" }
 distribution = true
+
+[tool.pdm.version]
+source = "scm"
+write_to = "octopin/_version.py"
+write_template = '__version__ = "{}"'
+version_format = "pdm_build:format_version"
 
 [tool.pdm.build]
 source-includes = [
