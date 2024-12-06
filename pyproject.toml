@@ -82,7 +82,6 @@ version_format = "pdm_build:format_version"
 
 [tool.pdm.build]
 source-includes = [
-    "octopin/",
     "tests/",
 ]
 
