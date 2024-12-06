@@ -22,11 +22,11 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           # To allow latest-changes to commit to the main branch
           token: ${{ secrets.TYPER_LATEST_CHANGES }}
-      - uses: tiangolo/latest-changes@0.3.2
+      - uses: tiangolo/latest-changes@58bc7e0a21975aee9728e0453528cf23066cb1da # 0.3.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           latest_changes_file: docs/release-notes.md
