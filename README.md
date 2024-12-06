@@ -1,7 +1,7 @@
 <h1 align="center">
 
 <a href="https://octopin.readthedocs.org">
-  <img style="width: 350px;" src="https://raw.githubusercontent.com/eclipse-csi/.github/refs/heads/main/artwork/eclipse-csi/logo-emblem/500x500%20Transparent.png">
+  <img style="width: 150px;" src="https://raw.githubusercontent.com/eclipse-csi/.github/refs/heads/main/artwork/eclipse-csi/logo-emblem/500x500%20Transparent.png">
 </a>
 
 </h1>
