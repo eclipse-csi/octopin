@@ -42,13 +42,13 @@ $ pipx install octopin
 
 ```console
 $ octopin --help
-                                                                                                                                                                                                                   
- Usage: octopin [OPTIONS] COMMAND [ARGS]...                                                                                                                                                                        
-                                                                                                                                                                                                                   
- OctoPIN - Tool to pin used actions and analyse transitive dependencies of 
- GitHub workflows / actions.                                                                                                             
- Read more in the docs: https://octopin.readthedocs.org/.                                                                                                                                                          
-                                                                                                                                                                                                                   
+
+ Usage: octopin [OPTIONS] COMMAND [ARGS]...
+
+ OctoPIN - Tool to pin used actions and analyse transitive dependencies of
+ GitHub workflows / actions.
+ Read more in the docs: https://octopin.readthedocs.org/.
+
 ╭─ Options ──────────────────────────────────────────────────────────────────╮
 │ --version                     Show the version and exit.                   │
 │ --install-completion          Install completion for the current shell.    │
