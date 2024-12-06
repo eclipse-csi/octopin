@@ -13,6 +13,7 @@
   <a href="https://github.com/eclipse-csi/octopin/actions/workflows/build.yml?query=branch%3Amain"><img alt="Build Status on GitHub" src="https://github.com/eclipse-csi/octopin/actions/workflows/build.yml/badge.svg?branch:main&workflow:Build" /></a>
   <a href="https://octopin.readthedocs.io"><img alt="Documentation Status" src="https://readthedocs.org/projects/octopin/badge/?version=latest" /></a><br>
   <a href="https://scorecard.dev/viewer/?uri=github.com/eclipse-csi/octopin"><img alt="OpenSSF Scorecard" src="https://api.securityscorecards.dev/projects/github.com/eclipse-csi/octopin/badge" /></a>
+  <a href="https://slsa.dev"><img alt="OpenSSF SLSA Level 3" src="https://slsa.dev/images/gh-badge-level3.svg" /></a>
 </p>
 
 # Eclipse Octopin
