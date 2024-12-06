@@ -10,3 +10,5 @@ from ._version import __version__
 
 __appname__ = "octopin"
 __version__ = __version__
+
+__all__ = ["__version__"]
