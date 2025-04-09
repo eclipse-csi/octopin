@@ -19,3 +19,9 @@
 # Eclipse Octopin
 
 Analyses and pins GitHub actions in your workflows.
+
+This tool converts pins your GitHub Action versions to use the SHA-1 hash
+instead of tag to improve security as Git tags are not immutable.
+
+Converts `uses: aws-actions/configure-aws-credentials@v1.7.0` to
+`uses: aws-actions/configure-aws-credentials@67fbcbb121271f7775d2e7715933280b06314838 # v1.7.0`
