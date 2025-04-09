@@ -20,7 +20,7 @@
 
 Analyses and pins GitHub actions in your workflows.
 
-This tool converts pins your GitHub Action versions to use the SHA-1 hash
+This tool pins your GitHub Action versions to use the SHA-1 hash
 instead of tag to improve security as Git tags are not immutable.
 
 Converts `uses: aws-actions/configure-aws-credentials@v1.7.0` to
