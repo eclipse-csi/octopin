@@ -25,3 +25,16 @@ instead of tag to improve security as Git tags are not immutable.
 
 Converts `uses: aws-actions/configure-aws-credentials@v1.7.0` to
 `uses: aws-actions/configure-aws-credentials@67fbcbb121271f7775d2e7715933280b06314838 # v1.7.0`
+
+
+## pre-commit hook
+
+This repo provides a pre-commit hook to run `octopin pin`. Add the following
+snippet to your `.pre-commit-config.yaml` to use.
+
+```yaml
+- repo: https://github.com/eclipse-csi/octopin
+  rev: main  # Recommended to pin to a tagged released
+  hooks:
+  - id: pin-versions
+```
