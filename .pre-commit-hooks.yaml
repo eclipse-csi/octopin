@@ -1,0 +1,9 @@
+- id: pin-versions
+  name: pin-versions
+  description: Pins versions of GitHub Actions to their SHA-1 hashes.
+  language: python
+  entry: octopin
+  args: [pin, --inplace]
+  files: ^\.github/workflows/
+  exclude: ^(?!.github/workflows/).*$
+  types: [file]
