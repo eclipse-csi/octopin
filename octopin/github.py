@@ -66,7 +66,7 @@ class GitHubAPI:
             return dict(headers)
         else:
             new_headers = dict(headers)
-            new_headers.update({"Authorization": f"Bearer: {self._token}"})
+            new_headers.update({"Authorization": f"Bearer {self._token}"})
             return new_headers
 
     async def get_default_branch(self, owner: str, repo: str) -> str:
