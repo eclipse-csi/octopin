@@ -94,13 +94,19 @@ def pin(
     ] = False,
     token: Annotated[
         str | None,
-        typer.Option(help="GitHub token to use."),
+        typer.Option(
+            help="GitHub token to use. Reads GITHUB_TOKEN from the environment if not provided.",
+            envvar=["GITHUB_TOKEN", "GH_TOKEN"],
+        ),
     ] = None,
     verbose: bool = typer.Option(False, help="Enable verbose output"),
 ) -> int:
     """
     Pin actions used in multiple workflows by calling `pin` for each workflow.
     """
+    if not token:
+        print("[yellow]Warn: GitHub token not provided. Proceeding unauthenticated.")
+
     return_code = 0
 
     for workflow in workflows:
