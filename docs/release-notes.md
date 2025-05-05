@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* chore(deps): bump actions/upload-artifact from 4.6.1 to 4.6.2. PR [#36](https://github.com/eclipse-csi/octopin/pull/36) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump astral-sh/setup-uv from 5.4.2 to 6.0.1. PR [#37](https://github.com/eclipse-csi/octopin/pull/37) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump ossf/scorecard-action from 2.4.0 to 2.4.1. PR [#34](https://github.com/eclipse-csi/octopin/pull/34) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump actions/download-artifact from 4.2.1 to 4.3.0. PR [#32](https://github.com/eclipse-csi/octopin/pull/32) by [@dependabot[bot]](https://github.com/apps/dependabot).
