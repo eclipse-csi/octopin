@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* chore(deps): bump actions/setup-python from 5.5.0 to 5.6.0. PR [#38](https://github.com/eclipse-csi/octopin/pull/38) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump astral-sh/setup-uv from 6.0.1 to 6.1.0. PR [#39](https://github.com/eclipse-csi/octopin/pull/39) by [@dependabot[bot]](https://github.com/apps/dependabot).
 
 ### Fixes
