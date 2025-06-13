@@ -5,6 +5,7 @@ on:
     branches:
       # we publish to Test PyPI on pushes to the main branch
       - "main"
+  create:
     tags:
       - "v*"
 
