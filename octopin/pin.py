@@ -1,5 +1,5 @@
 #  *******************************************************************************
-#  Copyright (c) 2023-2024 Eclipse Foundation and others.
+#  Copyright (c) 2023-2025 Eclipse Foundation and others.
 #  This program and the accompanying materials are made available
 #  under the terms of the Eclipse Public License 2.0
 #  which is available at http://www.eclipse.org/legal/epl-v20.html
@@ -145,14 +145,18 @@ async def _handle_async(workflow_ref: ActionRef, token: str | None) -> tuple[Wor
             else:
                 pinned_actions[orig_action] = f"{pinned_action!r}"
 
-        def pin(m: re.Match[str]) -> str:
-            return str(m.group(2) + pinned_actions[m.group(3)])
-
         pinned_lines = []
         for line in workflow_file.lines:
-            pinned_lines.append(re.sub(r"^[^#\n]*((uses:\s+)([^\s#]+)((\s+#)([^\n]+))?)(?=\n?)", pin, line))
+            pinned_lines.append(pin_action_on_line_if_needed(line, pinned_actions))
 
         return workflow_file, pinned_lines
+
+
+def pin_action_on_line_if_needed(line: str, pinned_actions: dict[str, str]) -> str:
+    def _pin_action(m: re.Match[str]) -> str:
+        return str(m.group(2) + pinned_actions[m.group(3)])
+
+    return re.sub(r"^(([^#\n]*uses:\s+)([^\s#]+)((\s+#)([^\n]+))?)(?=\n?)", _pin_action, line)
 
 
 if __name__ == "__main__":
