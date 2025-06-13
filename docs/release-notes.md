@@ -2,6 +2,9 @@
 
 ## Latest Changes
 
+
+## 0.1.2
+
 * chore(deps): bump ossf/scorecard-action from 2.4.1 to 2.4.2. PR [#40](https://github.com/eclipse-csi/octopin/pull/40) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump softprops/action-gh-release from 2.2.1 to 2.2.2. PR [#33](https://github.com/eclipse-csi/octopin/pull/33) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump actions/upload-artifact from 4.6.1 to 4.6.2. PR [#36](https://github.com/eclipse-csi/octopin/pull/36) by [@dependabot[bot]](https://github.com/apps/dependabot).
