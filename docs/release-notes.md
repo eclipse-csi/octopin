@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+* chore(deps): bump astral-sh/setup-uv from 6.0.1 to 6.1.0. PR [#39](https://github.com/eclipse-csi/octopin/pull/39) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
 ### Fixes
 
 * fix: retain leading characters when replacing a workflow line. PR [#42](https://github.com/eclipse-csi/octopin/pull/42) by [@raboof](https://github.com/raboof).
