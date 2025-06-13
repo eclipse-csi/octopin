@@ -2,6 +2,9 @@
 
 ## Latest Changes
 
+### Fixes
+
+* fix: retain leading characters when replacing a workflow line. PR [#42](https://github.com/eclipse-csi/octopin/pull/42) by [@raboof](https://github.com/raboof).
 
 ## 0.1.2
 
