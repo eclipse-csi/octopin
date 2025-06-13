@@ -150,7 +150,7 @@ async def _handle_async(workflow_ref: ActionRef, token: str | None) -> tuple[Wor
 
         pinned_lines = []
         for line in workflow_file.lines:
-            pinned_lines.append(re.sub(r"^[^#\n]*((uses:\s+)([^\s#]+)((\s+#)([^\n]+))?)(?=\n?)", pin, line))
+            pinned_lines.append(re.sub(r"^(([^#\n]*uses:\s+)([^\s#]+)((\s+#)([^\n]+))?)(?=\n?)", pin, line))
 
         return workflow_file, pinned_lines
 
