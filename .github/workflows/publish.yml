@@ -110,7 +110,7 @@ jobs:
           release_notes_file: RELEASE_NOTES.md
 
       - name: "Create GitHub release"
-        uses: softprops/action-gh-release@da05d552573ad5aba039eaac05058a918a7bf631 # v2.2.2
+        uses: softprops/action-gh-release@72f2c25fcb47643c292f7107632f7a47c1df5cd8 # v2.3.2
         with:
           name: "Octopin ${{ needs.prepare.outputs.release-tag }}"
           tag_name: "${{ needs.prepare.outputs.release-tag }}"
