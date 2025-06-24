@@ -11,7 +11,7 @@ import pytest
 from octopin.pin import pin_action_on_line_if_needed
 
 _pinned_actions: dict[str, str] = {
-    "actions/checkout@v4": "actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2"
+    "actions/checkout@v4": "actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2"
 }
 
 
@@ -24,11 +24,15 @@ _pinned_actions: dict[str, str] = {
         ),
         (
             "        uses: actions/checkout@v4",
-            "        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2",
+            "        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2",
         ),
         (
             "      - uses: actions/checkout@v4",
-            "      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2",
+            "      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2",
+        ),
+        (
+            "      - uses: actions/checkout@v4 # v4",
+            "      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2",
         ),
     ],
 )

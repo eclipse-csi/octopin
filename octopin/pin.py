@@ -141,7 +141,7 @@ async def _handle_async(workflow_ref: ActionRef, token: str | None) -> tuple[Wor
 
         for orig_action, pinned_action, pinned_comment in r:
             if pinned_comment:
-                pinned_actions[orig_action] = f"{pinned_action!r} # {pinned_comment}"
+                pinned_actions[orig_action] = f"{pinned_action!r}  # {pinned_comment}"
             else:
                 pinned_actions[orig_action] = f"{pinned_action!r}"
 
