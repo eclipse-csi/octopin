@@ -18,21 +18,35 @@ _pinned_actions: dict[str, str] = {
 @pytest.mark.parametrize(
     "line, expected",
     [
+        # commented out lines should not be pinned
         (
             "#        uses: actions/checkout@v4",
             "#        uses: actions/checkout@v4",
         ),
+        # nominal case, w/o leading '-'
         (
             "        uses: actions/checkout@v4",
             "        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2",
         ),
+        # nominal case, with leading '-'
         (
             "      - uses: actions/checkout@v4",
             "      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2",
         ),
+        # replace existing comment with actual version being pinned
         (
             "      - uses: actions/checkout@v4 # v4",
             "      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2",
+        ),
+        # ignore action due to comment, does not exist in pinned actions
+        (
+            "      - uses: mysuperduperorg/mysuperduperaction@v4  # pinning: ignore",
+            "      - uses: mysuperduperorg/mysuperduperaction@v4  # pinning: ignore",
+        ),
+        # ignore action due to comment, exists in pinned actions
+        (
+            "      - uses: actions/checkout@v4  # pinning: ignore",
+            "      - uses: actions/checkout@v4  # pinning: ignore",
         ),
     ],
 )

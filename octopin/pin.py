@@ -154,7 +154,14 @@ async def _handle_async(workflow_ref: ActionRef, token: str | None) -> tuple[Wor
 
 def pin_action_on_line_if_needed(line: str, pinned_actions: dict[str, str]) -> str:
     def _pin_action(m: re.Match[str]) -> str:
-        return str(m.group(2) + pinned_actions[m.group(3)])
+        prefix = m.group(2)
+        unpinned_action = m.group(3)
+        comment = m.group(6)
+
+        if comment is not None and "pinning: ignore" in comment:
+            return m.group(0)
+
+        return str(prefix + pinned_actions[unpinned_action])
 
     return re.sub(r"^(([^#\n]*uses:\s+)([^\s#]+)((\s+#)([^\n]+))?)(?=\n?)", _pin_action, line)
 

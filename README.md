@@ -26,6 +26,24 @@ instead of tag to improve security as Git tags are not immutable.
 Converts `uses: aws-actions/configure-aws-credentials@v1.7.0` to
 `uses: aws-actions/configure-aws-credentials@67fbcbb121271f7775d2e7715933280b06314838 # v1.7.0`
 
+## Skipping actions
+
+To skip a specific action from being pinned, you can add a comment `pinning: ignore`.
+
+Example using the generic SLSA generator action which *MUST* be [referenced](https://github.com/slsa-framework/slsa-github-generator?tab=readme-ov-file#referencing-slsa-builders-and-generators) by a tag rather than a commit hash:
+
+```yaml
+provenance:
+    needs: ['prepare', 'build-dist']
+    permissions:
+      actions: read
+      contents: write
+      id-token: write # Needed to access the workflow's OIDC identity.
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v2.1.0 # pinning: ignore
+    with:
+      base64-subjects: "${{ needs.build-dist.outputs.hashes }}"
+      upload-assets: true
+```
 
 ## pre-commit hook
 
