@@ -34,6 +34,10 @@ _pinned_actions: dict[str, str] = {
             "      - uses: actions/checkout@v4 # v4",
             "      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2",
         ),
+        (
+            "      - uses: mysuperduperorg/mysuperduperaction@v4  # pinning: ignore",
+            "      - uses: mysuperduperorg/mysuperduperaction@v4  # pinning: ignore",
+        ),
     ],
 )
 def test_pin_action_on_line_if_needed(line: str, expected: str) -> None:
