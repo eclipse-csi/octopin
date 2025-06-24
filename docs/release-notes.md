@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+* Add 2 spaces before a comment indicating the pinned version. PR [#47](https://github.com/eclipse-csi/octopin/pull/47) by [@netomi](https://github.com/netomi).
+
 ## 0.1.3
 
 * chore(deps): bump actions/setup-python from 5.5.0 to 5.6.0. PR [#38](https://github.com/eclipse-csi/octopin/pull/38) by [@dependabot[bot]](https://github.com/apps/dependabot).
