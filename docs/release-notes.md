@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* chore(deps): bump softprops/action-gh-release from 2.2.2 to 2.3.2. PR [#44](https://github.com/eclipse-csi/octopin/pull/44) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump astral-sh/setup-uv from 6.1.0 to 6.3.0. PR [#46](https://github.com/eclipse-csi/octopin/pull/46) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Add 2 spaces before a comment indicating the pinned version. PR [#47](https://github.com/eclipse-csi/octopin/pull/47) by [@netomi](https://github.com/netomi).
 
