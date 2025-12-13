@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+## 0.1.4
+
 * chore(deps): bump astral-sh/setup-uv from 6.3.0 to 7.1.2. PR [#63](https://github.com/eclipse-csi/octopin/pull/63) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump tiangolo/latest-changes from 0.3.2 to 0.4.0. PR [#51](https://github.com/eclipse-csi/octopin/pull/51) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Support a comment to ignore actions from being pinned. PR [#48](https://github.com/eclipse-csi/octopin/pull/48) by [@netomi](https://github.com/netomi).
