@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* chore(deps): bump tiangolo/latest-changes from 0.3.2 to 0.4.0. PR [#51](https://github.com/eclipse-csi/octopin/pull/51) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * Support a comment to ignore actions from being pinned. PR [#48](https://github.com/eclipse-csi/octopin/pull/48) by [@netomi](https://github.com/netomi).
 * chore(deps): bump softprops/action-gh-release from 2.2.2 to 2.3.2. PR [#44](https://github.com/eclipse-csi/octopin/pull/44) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump astral-sh/setup-uv from 6.1.0 to 6.3.0. PR [#46](https://github.com/eclipse-csi/octopin/pull/46) by [@dependabot[bot]](https://github.com/apps/dependabot).
