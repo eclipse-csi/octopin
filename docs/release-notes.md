@@ -2,6 +2,7 @@
 
 ## Latest Changes
 
+* chore(deps): bump actions/download-artifact from 4.3.0 to 7.0.0. PR [#69](https://github.com/eclipse-csi/octopin/pull/69) by [@dependabot[bot]](https://github.com/apps/dependabot).
 * chore(deps): bump actions/checkout from 4.2.2 to 6.0.1. PR [#68](https://github.com/eclipse-csi/octopin/pull/68) by [@dependabot[bot]](https://github.com/apps/dependabot).
 
 ## 0.1.4
