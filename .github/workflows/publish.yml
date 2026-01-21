@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   prepare:
-    if: github.repository == 'eclipse-csi/octopin'
+    if: github.repository == 'eclipse-csi/octopin' && github.actor != 'dependabot[bot]'
     runs-on: ubuntu-22.04
     outputs:
       release-tag: ${{ steps.context.outputs.RELEASE_TAG }}
