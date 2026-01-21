@@ -2,6 +2,8 @@
 
 ## Latest Changes
 
+* chore(deps): bump actions/checkout from 4.2.2 to 6.0.1. PR [#68](https://github.com/eclipse-csi/octopin/pull/68) by [@dependabot[bot]](https://github.com/apps/dependabot).
+
 ## 0.1.4
 
 * chore(deps): bump astral-sh/setup-uv from 6.3.0 to 7.1.2. PR [#63](https://github.com/eclipse-csi/octopin/pull/63) by [@dependabot[bot]](https://github.com/apps/dependabot).
