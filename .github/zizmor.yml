@@ -1,0 +1,9 @@
+rules:
+  dangerous-triggers:
+    ignore:
+      - latest-changes.yml
+
+  unpinned-uses:
+    config:
+      policies:
+        slsa-framework/*: any
