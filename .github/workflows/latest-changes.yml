@@ -26,6 +26,7 @@ jobs:
         with:
           # To allow latest-changes to commit to the main branch
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
       - uses: tiangolo/latest-changes@dd39d11d7dd4f4ebf30206448ad4baff5c477eca # 0.4.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

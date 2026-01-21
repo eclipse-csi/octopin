@@ -31,10 +31,10 @@ jobs:
         id: context
         shell: bash
         run: |
-          if [[ "${{ github.ref }}" =~ ^refs/heads/.* ]]; then
-            echo "RELEASE_TAG=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+          if [[ "${GITHUB_REF}" =~ ^refs/heads/.* ]]; then
+            echo "RELEASE_TAG=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
           else
-            echo "RELEASE_TAG=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "RELEASE_TAG=${GITHUB_REF_NAME}" >> $GITHUB_OUTPUT
           fi
 
   build-dist:
@@ -47,6 +47,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ needs.prepare.outputs.release-tag }}
+          persist-credentials: false
 
       - name: Setup uv and python
         uses: astral-sh/setup-uv@85856786d1ce8acfbcc2f13a5f3fbd6b938f9f41 # v7.1.2
@@ -95,6 +96,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
 
       - name: "Download dists"
         uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
