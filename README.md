@@ -18,6 +18,13 @@
 
 # Eclipse Octopin
 
+> [!CAUTION]
+> This tool is deprecated and will not be further maintained, you should consider migrating to better alternatives:
+>  - [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor): static analysis for GitHub workflows including pinning of actions
+>  - [suzuki-shunsuke/pinact](https://github.com/suzuki-shunsuke/pinact): supports updating and hash-pinning workflows, actions, and arbitrary inputs.
+>  - [davidism/gha-update](https://github.com/davidism/gha-update): supports updating and hash-pinning workflow definitions.
+>  - [stacklok/frizbee](https://github.com/stacklok/frizbee): supports hash-pinning (but not updating) workflow definitions.
+
 Analyses and pins GitHub actions in your workflows.
 
 This tool pins your GitHub Action versions to use the SHA-1 hash
